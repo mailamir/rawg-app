@@ -56,16 +56,17 @@ export async function getServerSideProps({ params }) {
 
 const Flex = styled.div`
   @media (min-width: 1000px) {
-    display: grid;
-    grid-template-columns: 1fr 30%;
-    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5%;
   }
 `
 const Left = styled.div`
-  padding: 0;
+  flex-basis: 65%;
 `
 const Right = styled.div`
-  padding: 0;
+  flex-basis: 30%;
 `
 const Title = styled.h2`
   padding-bottom: 15px;

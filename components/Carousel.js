@@ -49,7 +49,13 @@ export default function CarouselSimple({ items }) {
       >
         {items.map((it) => (
           <Slide key={it.id}>
-            <Image src={it.image} alt={it.name} width={600} height={200} />
+            <Image
+              src={it.image} 
+              alt={it.name} 
+              width={800} 
+              height={400} 
+              layout="responsive" //intrinsic 
+            />
           </Slide>
         ))}
       </Carousel>
@@ -61,7 +67,7 @@ const Slider = styled.div`
   margin-bottom: 35px;
 `
 const Slide = styled.div`
-  width: 600px;
+  width: 60vw;
   text-align: center;
   box-sizing: border-box;
   background-color: ${({ theme }) => theme.colors.gray};
