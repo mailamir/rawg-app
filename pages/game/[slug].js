@@ -35,7 +35,7 @@ export default function Game({ game, screenshots }) {
         </Param>
         <Param>
           <div>Рейтинг:</div>
-          <Round>{game.rating || 'Нет данных'}</Round>
+          <Round>{game.rating || '-'}</Round>
         </Param>
       </Right>
     </Flex>

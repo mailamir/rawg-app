@@ -33,7 +33,7 @@ export default function Grid({ items }) {
             </Param>
             <Param>
               <div>Рейтинг:</div>
-              <Round>{item.rating || 'Нет данных'}</Round>
+              <Round>{item.rating || '-'}</Round>
             </Param>
           </Meta>
         </GridItem>
