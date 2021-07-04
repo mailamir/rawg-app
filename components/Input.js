@@ -9,7 +9,7 @@ export default function Input(props) {
       <InputStyled
         name={name}
         type={type || 'text'}
-        value={value}
+        value={value || ''}
         onChange={onChange}
       />
     </>
