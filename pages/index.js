@@ -70,7 +70,7 @@ function Games({ games, platforms }) {
       />
 
       {more.length === 0 ? (
-        <Callout color="danger">Ничего не найдено! Уточните запрос</Callout>
+        <Callout color="danger">Ничего не найдено! Уточните запрос.</Callout>
       ) : (
         <InfiniteScroll
           hasMore={!!nextPage}
